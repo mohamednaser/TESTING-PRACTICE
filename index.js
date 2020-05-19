@@ -3,8 +3,14 @@ function capitalize(string) {
 }
 
 function reverseString(string) {
-
-    return string.split("").reverse().join("");
-
+  return string.split("").reverse().join("");
 }
-export {capitalize , reverseString};
+
+const calculator = {
+  add: (x, y) => x + y,
+  subtract: (x, y) => x - y,
+  divide: (x, y) => x / y,
+  multiply: (x, y) => x * y,
+};
+
+export { capitalize, reverseString, calculator };
