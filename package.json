@@ -18,11 +18,10 @@
   "homepage": "https://github.com/mohamednaser/TESTING-PRACTICE#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.9.6",
-    "jest": "^26.0.1"
-  },
-  "dependencies": {
     "eslint": "^7.0.0",
     "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2"
-  }
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^26.0.1"
+  },
+  "dependencies": {}
 }

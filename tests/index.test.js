@@ -1,5 +1,5 @@
 import {
-  capitalize, reverseString, calculator, analyze,
+  capitalize, reverseString, calculator, analyze, caesar,
 } from '../index';
 
 test('Check capitalize function working fine ', () => {
@@ -33,4 +33,8 @@ test('Test Analyze function  ', () => {
     max: 8,
     min: 1,
   });
+});
+
+test('Test caesar cypher function  ', () => {
+  expect(caesar('YZ.yz.AB.ab', 2)).toBe('AB.ab.CD.cd');
 });

@@ -31,6 +31,24 @@ function analyze(array) {
   };
 }
 
+
+function caesar(text, shift) {
+  let result = '';
+
+  for (let i = 0; i < text.length; i += 1) {
+    const character = text.charCodeAt(i);
+    if (character >= 65 && character <= 90) {
+      result += String.fromCharCode(((character - 65 + shift) % 26) + 65);
+    } else if (character >= 97 && character <= 122) {
+      result += String.fromCharCode(((character - 97 + shift) % 26) + 97);
+    } else {
+      result += text.charAt(i);
+    }
+  }
+
+  return result;
+}
+
 export {
-  capitalize, reverseString, analyze, calculator,
+  capitalize, reverseString, analyze, calculator, caesar,
 };
