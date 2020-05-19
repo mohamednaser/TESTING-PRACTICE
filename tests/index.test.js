@@ -1,4 +1,4 @@
-import { capitalize, reverseString, calculator } from "../index";
+import { capitalize, reverseString, calculator, analyze } from "../index";
 
 test("Check capitalize function working fine ", () => {
   expect(capitalize("mohamed")).toBe("Mohamed");
@@ -22,4 +22,13 @@ test("Tech Calculator subtract function  ", () => {
 
 test("Tech Calculator multiply function  ", () => {
   expect(calculator.multiply(6, 3)).toBe(18);
+});
+
+test("Test Analyze function  ", () => {
+  expect(analyze([1, 8, 3, 4, 2, 6])).toMatchObject({
+    average: 4,
+    length: 6,
+    max: 8,
+    min: 1,
+  });
 });
